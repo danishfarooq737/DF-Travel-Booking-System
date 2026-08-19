@@ -60,6 +60,13 @@ if (process.env.NODE_ENV !== 'test') {
 // --- General API rate limiting -------------------------------------------
 app.use('/api', apiLimiter);
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Backend API is running',
+  });
+});
+
 // --- Health check (useful for uptime monitors / deployment platforms) ---
 app.get('/api/health', (req, res) => {
   res.status(200).json({ success: true, message: 'API is healthy', timestamp: new Date().toISOString() });
