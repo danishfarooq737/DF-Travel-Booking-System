@@ -7,6 +7,8 @@ import useToast from '../hooks/useToast.js';
 import useDocumentTitle from '../hooks/useDocumentTitle.js';
 import RouteLine from '../components/ui/RouteLine.jsx';
 
+console.log('Google Client ID:', import.meta.env.VITE_GOOGLE_CLIENT_ID);
+
 export default function Login() {
   useDocumentTitle('Log in');
 
