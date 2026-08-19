@@ -1,0 +1,15 @@
+{
+  "name": "travel-booking-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN Travel Booking System — monorepo root. See backend/ and frontend/ for the two apps.",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "seed:backend": "npm run seed --prefix backend",
+    "seed:frontend": "npm run seed --prefix frontend",
+    "test:backend": "npm test --prefix backend"
+  }
+}

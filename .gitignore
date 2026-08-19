@@ -1,0 +1,36 @@
+# This root .gitignore is a safety net — backend/ and frontend/ each also
+# have their own .gitignore. Patterns here apply repo-wide.
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Build output
+dist/
+build/
+**/dist/
+**/build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Coverage / test output
+coverage/
+**/coverage/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Vite cache
+.vite/
